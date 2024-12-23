@@ -1,0 +1,184 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Sophie Victoria's portfolio">
+        <meta name="author" content="Noa Cengarle">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Noto+Sans+PhagsPa&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+        rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./Logo/favicon.ico">
+        <title>Sophie Victoria</title>
+    </head>
+    
+    <body>
+        <header>
+            <section class="home" id="home">
+                <nav class="navbar">
+                    <ul class="nav-link">
+                        <li><a href="#aboutme" class="linkBurger">about me</a></li>
+                        <li><a href="#projects" class="linkBurger">projects</a></li>
+                        <li><a href="#contact" class="linkBurger">contact</a></li>
+                    </ul>
+                    <div class="menu">
+                        <input type="checkbox" id="menu-hamburger">
+                        <label for="menu-hamburger"></label>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <h4>People in Action</h4>
+            <p>This project highlights professionals at work, 
+                showcasing their emotions, dedication, and sometimes 
+                the technical expertise or effort behind their craft. 
+                Each photograph tells a story, emphasizing the passion 
+                that drives their actions.
+            </p>
+            <h4>Cross-Country Skiing</h4>
+            <p>This project captures the unique atmosphere of cross-country 
+                skiing as a winter tourism activity. Through my images, I aimed 
+                to evoke the serenity and emotion of gliding through snowy landscapes, 
+                presenting it as an experience worth exploring. Designed as 
+                promotional content, it reflects my ability to highlight moments 
+                that invite viewers to immerse themselves in the adventure.
+            </p>
+            <h4>Snowshoeing</h4>
+            <p>This project focuses on the charm of snowshoeing, an immersive way 
+                to explore winter landscapes. The photos convey a sense of 
+                connection to nature and the quiet beauty of the surroundings. 
+                As promotional content, this work showcases my capacity to 
+                inspire others to experience these unique outdoor activities.
+            </p>
+            <h4>Cycling</h4>
+            <p>This project combines photos and a video to portray an immersive 
+                cycling adventure on a remote island. From ferry rides to camping 
+                in the wild, I aimed to evoke the spirit of exploration and inspire 
+                travelers to discover the region for themselves.
+            </p>
+            <h4>Arctic Pride Event</h4>
+            <p>This project captures the vibrant essence of the Pride celebration, 
+                highlighting the emotions, energy, and artistry of the event. 
+                Through my work, I aimed to honor the performers and showcase the 
+                powerful atmosphere that made the week unforgettable.
+            </p>
+            <h4>Promotional Videos</h4>
+            <p>My teasers are designed to promote activities and businesses by 
+                capturing key moments and making them visually compelling. This 
+                portfolio reflects my professionalism and ability to create content 
+                that attracts attention and drives engagement.
+            </p>
+        </main>
+        <footer>
+            <section class="contact" id="contact">
+                <h3>Contact</h3>
+                <article class="links">
+                    <div class="line"></div>
+                    <a href="https://github.com/noa-cen" target="_blank"><img 
+                        src="./Images/github.svg" alt="logo GitHub" title="Github"></a>
+                    <a href="https://www.figma.com/@noacen" target="_blank"><img 
+                        src="./Images/figma.svg" alt="logo Figma" title="Figma"></a>
+                    <a href="https://www.linkedin.com/in/noa-cengarle/" target="_blank"><img 
+                    src="./Images/linkedin.svg" alt="logo Linkedin" title="Linkedin"></a>
+                    <div class="line"></div>
+                </article>
+            </section>
+        </footer>
+    </body>
+    <script>
+        const menuHamburger = document.querySelector("#menu-hamburger")
+        const navLinks = document.querySelector(".nav-link")
+        document.querySelectorAll(".linkBurger").forEach( element => {
+            element.addEventListener('click', ()=>{
+                document.querySelector('#menu-hamburger').checked = false
+                navLinks.classList.toggle('mobile-menu')
+            })
+        })
+        menuHamburger.addEventListener('click',() => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+</head>
+<body class="w3-light-grey">
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+</body>
+</html>
