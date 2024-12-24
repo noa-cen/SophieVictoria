@@ -43,31 +43,36 @@
                     </p>
                 </article>
                 <article class="container">
-                    <img src="./Images/Pride/image00001.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image00002.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image00003.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image00004.jpg" alt="" class="portrait">
-                    <img src="./Images/Pride/image00005.jpg" alt="" class="portrait">
-                    <img src="./Images/Pride/image00006.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image00007.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image00008.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image00009.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image00010.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image00011.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image00012.jpg" alt="" class="portrait">
-                    <img src="./Images/Pride/image00013.jpg" alt="" class="portrait">
-                    <img src="./Images/Pride/image0001.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image0002.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image0003.jpg" alt="" class="portrait">
-                    <img src="./Images/Pride/image0004.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image0005.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image0006.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image0007.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image0008.jpg" alt="" class="portrait">
-                    <img src="./Images/Pride/image0009.jpg" alt="" class="portrait">
-                    <img src="./Images/Pride/image0010.jpg" alt="" class="paysage">
-                    <img src="./Images/Pride/image0011.jpg" alt="" class="paysage">
+                    <img src="./Images/Pride/image00001.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00002.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00003.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00004.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00005.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00006.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00007.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00008.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00009.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00010.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00011.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00012.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image00013.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0001.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0002.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0003.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0004.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0005.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0006.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0007.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0008.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0009.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0010.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Pride/image0011.jpg" alt="" class="myImages" id="myImg">
                 </article>
+            </article>
+
+            <article id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
             </article>
 
         </main>
@@ -80,6 +85,8 @@
                         <i class="fa-brands fa-tiktok fa-2xl" aria-hidden="true"></i></a>
                     <a href="mailto:spievictoria@gmail.com" target="_blank">
                         <i class="fa-regular fa-envelope fa-2xl" aria-hidden="true"></i></i></a>
+                    <a href="https://www.linkedin.com/in/sophie-victoria/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i></a>   
                 </article>
                 <p>© Copyright 2024 | Sophie Victoria | All rights reserved</p>
             </article>
@@ -97,5 +104,23 @@
         menuHamburger.addEventListener('click',() => {
             navLinks.classList.toggle('mobile-menu')
         })
+    </script>
+
+    <script>
+        var modal = document.getElementById('myModal');
+        var images = document.getElementsByClassName('myImages');
+        var modalImg = document.getElementById("img01");
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            img.onclick = function(evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
     </script>
 </html>

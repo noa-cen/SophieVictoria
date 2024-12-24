@@ -45,10 +45,15 @@
                     </p>
                 </article>
                 <article class="container">
-                    <img src="./Images/Ski/Ski 1.jpg" alt="" class="paysage">
-                    <img src="./Images/Ski/Ski 2.jpg" alt="" class="paysage">
-                    <img src="./Images/Ski/Place.jpeg" alt="" class="paysage">
+                    <img src="./Images/Ski/Ski 1.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Ski/Ski 2.jpg" alt="" class="myImages" id="myImg">
+                    <img src="./Images/Ski/Place.jpeg" alt="" class="myImages" id="myImg">
                 </article>
+            </article>
+
+            <article id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
             </article>
 
         </main>
@@ -61,6 +66,8 @@
                         <i class="fa-brands fa-tiktok fa-2xl" aria-hidden="true"></i></a>
                     <a href="mailto:spievictoria@gmail.com" target="_blank">
                         <i class="fa-regular fa-envelope fa-2xl" aria-hidden="true"></i></i></a>
+                    <a href="https://www.linkedin.com/in/sophie-victoria/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i></a>   
                 </article>
                 <p>© Copyright 2024 | Sophie Victoria | All rights reserved</p>
             </article>
@@ -78,5 +85,23 @@
         menuHamburger.addEventListener('click',() => {
             navLinks.classList.toggle('mobile-menu')
         })
+    </script>
+
+    <script>
+        var modal = document.getElementById('myModal');
+        var images = document.getElementsByClassName('myImages');
+        var modalImg = document.getElementById("img01");
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            img.onclick = function(evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
     </script>
 </html>
