@@ -163,13 +163,13 @@ section {
         gap: 50px;
 
         .portrait {
-            width: 300px;
+            width: 350px;
             height: 400px;
             object-fit: cover;
         }
         .paysage {
-            width: 300px;
-            height: 400px;
+            width: 350px;
+            height: 300px;
             object-fit: cover;
         }
     }
