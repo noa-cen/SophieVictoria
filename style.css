@@ -17,9 +17,9 @@ font-family: "Noto Sans PhagsPa", serif;
 */
 
 :root {
-    --primary-color: #0D1321;
-    --secondary-color: #F0EBD8;
-    --tertiary-color: #425BB5;
+    --primary-color: #111827;
+    --secondary-color: #E0D5CC;
+    --tertiary-color: #0C4A6F;
     --quarterly-color: #FFFFFF;
 }
 
@@ -226,7 +226,7 @@ section {
         gap: 60px;
         
         .sophie {
-            width: 300px;
+            width: 350px;
         }
         .presentation {
             width: 600px;
@@ -467,7 +467,7 @@ section {
     }
       
     .close:hover, .close:focus {
-        color: var(--tertiary-color);
+        transform: scale(1.4);
         text-decoration: none;
         cursor: pointer;
     }
@@ -475,6 +475,10 @@ section {
 /* Contact section
 ==================================================*/
 .contact {
+    background-image: url("./Images/background.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -484,40 +488,46 @@ section {
     .formcarry-container * {
         box-sizing: border-box;
     }
-      
+
     .formcarry-container {
         --c-width: 50%;
         --c-max-width: 500px;
-        padding-bottom: 40px;
         width: var(--c-width);
         max-width: var(--c-max-width);
         display: block;
+        padding: 0 48px 24px;
+        border: 4px solid var(--primary-color);
+        border-radius: 15px;
         
         .formcarry-form {
             label {
                 display: block;
                 padding: 16px 0 8px 0;
                 cursor: pointer;
+                color: var(--primary-color);
+                font-weight: 700;
             }
             
             input, textarea {
                 display: block;
                 width: 100%;
                 padding: 10px;
-                background-color: var(--tertiary-color);
-                border: 4px solid var(--primary-color);
+                background-color: rgb(255, 255, 255, 0.5);
+                border: 2px solid var(--primary-color);
                 outline: none;
-                color: var(--secondary-color);
+                color: var(--primary-color);
+                border-radius: 5px;
             }
 
             input:focus, textarea:focus {
-                background-color: var(--tertiary-color);
-                color: var(--secondary-color);
+                border-color: var(--primary-color);
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
             }
             input:focus:required:invalid {
                 border-color: var(--primary-color);
-                background-color: var(--tertiary-color);
-                color: var(--secondary-color);
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
             }
             
             button {
@@ -525,44 +535,28 @@ section {
                 margin-top: 12px;
                 width: 100%;
                 padding: 12px 20px;
-                border: 4px solid var(--primary-color);
+                border: 3px solid var(--primary-color);
                 background-color: var(--primary-color);
                 color: var(--secondary-color);
                 font-weight: 700;
                 font-size: 14pt;
                 cursor: pointer;
                 transition: 300ms all;
+                border-radius: 5px;
             }
             
             button:hover {
-                background-color: var(--tertiary-color);
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
             }
         }
-          .formcarry-alert {
-            padding: 12px;
-            border-radius: 10px;
-            color: var(--secondary-color);
-            margin-top: 12px;
-            display: none;
-          }
-          
-          .formcarry-alert.visible {
-            display: block;
-          }
-          
-          .formcarry-alert.success {
-            background: var(--tertiary-color);
-          }
-          
-          .formcarry-alert.error {
-            background: red;
-          }
     }
 
     .links {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 24px 0 16px 0;
 
         .fa-instagram, .fa-tiktok, .fa-envelope, .fa-linkedin {
             color: var(--primary-color);
@@ -572,11 +566,15 @@ section {
             color: var(--tertiary-color);
         }
     }
+    p {
+        font-size: 10pt;
+    }
 }
 article.contact {
     background-image: url("./Images/background.jpg");
     background-size: cover;
     background-position: 50% 60%;
+    padding: 24px;
 }
 /* Responsive media queries */
 @media (max-width: 768px) {
