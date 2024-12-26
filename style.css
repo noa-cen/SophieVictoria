@@ -6,6 +6,8 @@
     - Home section -
     - About me section -
     - Projects section -
+    - Navigation section -
+    - Gallery section -
     - Contact section -
     - Responsive media queries -
 */
@@ -52,8 +54,6 @@ body {
     text-decoration: none;
     list-style-type: none;
     border: none;
-    /* border: red;
-    border-style: solid; */
 }
 
 body {
@@ -161,7 +161,7 @@ section {
             transform: rotateZ(-40deg);
         }
         #menu-hamburger:checked ~label {
-            background-color: var(--secondary-color);
+            background-color: var(--quarterly-color);
         }
         #menu-hamburger ~label {
             transition: all 0.6s ease;
@@ -212,7 +212,7 @@ section {
           width: 100%;
           height: 100%;
           font-weight: 700;
-          font-size: 95pt;
+          font-size: 90pt;
           text-align: center;
           text-transform: uppercase;
           background-color: var(--quarterly-color);
@@ -277,7 +277,7 @@ section {
                 position: absolute;
                 top: 0;
                 left: 0;
-                background: rgb(66, 91, 181, 0.9);
+                background: rgb(12, 74, 111, 0.9);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -576,7 +576,8 @@ article.contact {
     background-position: 50% 60%;
     padding: 24px;
 }
-/* Responsive media queries */
+/* Responsive media queries
+==================================================*/
 @media (max-width: 768px) {
     .home {
         .navbar {
