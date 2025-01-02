@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Sophie Victoria's portfolio">
+        <meta name="author" content="Noa Cengarle">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Noto+Sans+PhagsPa&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ecde10fa93.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="./Images/favicon_io/favicon copie 2.ico">
+        <title>Creations</title>
+    </head>
+    
+    <body>
+        <header>
+            <section class="home">
+                <nav class="navbar">
+                    <ul class="nav-link">
+                        <li><a href="./index.html#home" class="linkBurger">home</a></li>
+                        <li><a href="./index.html#projects" class="linkBurger">projects</a></li>
+                        <li><a href="./index.html#contact" class="linkBurger">contact</a></li>
+                    </ul>
+                    <div class="menu">
+                        <input type="checkbox" id="menu-hamburger">
+                        <label for="menu-hamburger"></label>
+                    </div>
+                </nav>
+                <article class="hello">
+                    <h1 class="projects-title">CREATIONS</h1>
+                    <h2>Content creation</h2>
+                </article>
+            </section>
+        </header>
+     
+        <main>
+            <section class="gallery">
+                <article class="text">
+                    <p>This collection features videos that go beyond traditional promotion. 
+                        These fun, out-of-the-box creations tell unique stories, spark emotions, 
+                        and offer fresh perspectives. Each piece invites viewers into a world 
+                        where imagination and creativity take the lead.
+                    </p>
+                </article>
+                <article class="container">
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/1zc9oNnUvTE?si=G0Cn76Mn4dFj2L-a" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/0IEYXoI6hgU?si=WFTzK8sqje2ACuUb" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/nzbfRdfGdxk?si=yw-ZngMg0wJU4ZhC" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section class="contact">
+                <article class="links">
+                    <a href="https://www.instagram.com/sushax/" target="_blank">
+                        <i class="fa fa-instagram fa-2xl" aria-hidden="true"></i></a>
+                    <a href="https://www.tiktok.com/@sushax12" target="_blank">
+                        <i class="fa-brands fa-tiktok fa-2xl" aria-hidden="true"></i></a>
+                    <a href="mailto:spievictoria@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope fa-2xl" aria-hidden="true"></i></i></a>
+                    <a href="https://www.linkedin.com/in/sophie-victoria/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i></a>   
+                </article>
+                <p>© Copyright 2024 | Sophie Victoria | All rights reserved</p>
+            </section>
+        </footer>
+    </body>
+    <script>
+        const menuHamburger = document.querySelector("#menu-hamburger")
+        const navLinks = document.querySelector(".nav-link")
+        document.querySelectorAll(".linkBurger").forEach( element => {
+            element.addEventListener('click', ()=>{
+                document.querySelector('#menu-hamburger').checked = false
+                navLinks.classList.toggle('mobile-menu')
+            })
+        })
+        menuHamburger.addEventListener('click',() => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

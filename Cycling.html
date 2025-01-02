@@ -31,7 +31,7 @@
                 </nav>
                 <article class="hello">
                     <h1 class="projects-title">CYCLING</h1>
-                    <h2>Photography</h2>
+                    <h2>Videography</h2>
                 </article>
             </section>
         </header>
@@ -46,13 +46,30 @@
                     </p>
                 </article>
                 <article class="container">
-                    <img src="./Images/Cycling/Bike 1.jpg" alt="Biker on a guided tour" class="myImages">
-                    <img src="./Images/Cycling/Bike 2.jpg" alt="Biker on a guided tour" class="myImages">
-                </article>
-            
-                <article id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/P-bc2-R2Vnw?si=vF_ul8KipYDbWM89" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/GoTs830kHnc?si=wE0XIatAWE_C2FTr" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/LDqlJ70ZS8s?si=l_Ut-Ehhb1WTjZsS" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/iflXjA3f0_g?si=OwikwCm61w9jedmS" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
                 </article>
             </section>
         </main>
@@ -84,23 +101,5 @@
         menuHamburger.addEventListener('click',() => {
             navLinks.classList.toggle('mobile-menu')
         })
-    </script>
-
-    <script>
-        var modal = document.getElementById('myModal');
-        var images = document.getElementsByClassName('myImages');
-        var modalImg = document.getElementById("img01");
-        for (var i = 0; i < images.length; i++) {
-            var img = images[i];
-            img.onclick = function(evt) {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-        }
-        var span = document.getElementsByClassName("close")[0];
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
     </script>
 </html>
