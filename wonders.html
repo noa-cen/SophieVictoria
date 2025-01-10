@@ -12,7 +12,7 @@
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/ecde10fa93.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href="./Images/favicon_io/favicon copie 2.ico">
-        <title>Cross-Country Skiing</title>
+        <title>Wonders</title>
     </head>
     
     <body>
@@ -30,7 +30,7 @@
                     </div>
                 </nav>
                 <article class="hello">
-                    <h1 class="projects-title">CROSS-COUNTRY SKIING</h1>
+                    <h1 class="projects-title">WONDERS</h1>
                     <h2>Photography</h2>
                 </article>
             </section>
@@ -39,32 +39,52 @@
         <main>
             <section class="gallery">
                 <article class="text">
-                    <p>This project captures the unique atmosphere of cross-country 
-                        skiing as a winter tourism activity. Through my images, I aimed 
-                        to evoke the serenity and emotion of gliding through snowy landscapes, 
-                        presenting it as an experience worth exploring. Designed as 
-                        promotional content, it reflects my ability to highlight moments 
-                        that invite viewers to immerse themselves in the adventure.
+                    <p>This collection reflects moments of pure creative joy, featuring 
+                        breathtaking landscapes and the enchanting beauty of the Northern 
+                        Lights. Captured for the simple pleasure of exploring nature’s wonders, 
+                        these photos offer a glimpse into the world as I see it—full of magic, 
+                        serenity, and inspiration.
                     </p>
                 </article>
                 <article class="container">
-                    <img src="./Images/Ski/Ski 1.jpg" alt="A group of skiers listening to the guide" 
+                    <img src="./Images/Wonders/IMG_1757.jpg" alt="People at the shop, working on a bicycle" 
                     class="myImages">
-                    <img src="./Images/Ski/Ski 2.jpg" alt="Guid showing the way on a map" class="myImages">
-                    <img src="./Images/Ski/Place.jpeg" alt="Snow mountains" class="myImages">
+                    <img src="./Images/Wonders/IMG_1769.jpg" alt="People working on bearing and ring balls" 
+                    class="myImages">
+                    <img src="./Images/Wonders/IMG_23921.JPG" alt="People working on bearing and ring balls" 
+                    class="myImages">
+                    <img src="./Images/Wonders/IMG_24801.JPG" alt="People at the shop, working on a ski" 
+                    class="myImages">
+                    <img src="./Images/Wonders/IMG_6012.jpg" alt="People at the shop, working on a ski" 
+                    class="myImages">
+                    <img src="./Images/Wonders/IMG_25401.jpg" alt="People at the shop, working on a ski" 
+                    class="myImages">
+                    <img src="./Images/Wonders/IMG_25451.JPG" alt="People working on bearing and ring balls" 
+                    class="myImages">
+                    <img src="./Images/Wonders/IMG_4735.jpg" alt="Picture of the guide serving coffee" 
+                    class="myImages">
+                    <img src="./Images/Wonders/IMG_25331.JPG" alt="People at the shop, working on a ski" 
+                    class="myImages">
+                    <img src="./Images/Wonders/IMG_1408.jpg" alt="People at the shop, working on a snowboard" 
+                    class="myImages">
+                    <img src="./Images/Wonders/IMG_1723.jpeg" alt="People at the shop, working on a snowboard" 
+                    class="myImages">
+                    <img src="./Images/Wonders/Place.jpeg" alt="People at the shop, working on a ski" 
+                    class="myImages">
                 </article>
-            
+
                 <article id="myModal" class="modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" id="img01">
                 </article>
             </section>
+
         </main>
         <footer>
             <section class="contact">
                 <article class="links">
                     <a href="https://www.instagram.com/sushax/" target="_blank">
-                        <i class="fa fa-instagram fa-2xl" aria-hidden="true"></i></a>
+                        <i class="fa fa-instagram fa-2xl" ></i></a>
                     <a href="https://www.tiktok.com/@sushax12" target="_blank">
                         <i class="fa-brands fa-tiktok fa-2xl" aria-hidden="true"></i></a>
                     <a href="mailto:spievictoria@gmail.com" target="_blank">
@@ -89,7 +109,7 @@
             navLinks.classList.toggle('mobile-menu')
         })
     </script>
-
+    
     <script>
         var modal = document.getElementById('myModal');
         var images = document.getElementsByClassName('myImages');
@@ -99,7 +119,6 @@
             img.onclick = function(evt) {
                 modal.style.display = "block";
                 modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
             }
         }
         var span = document.getElementsByClassName("close")[0];
